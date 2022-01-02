@@ -30,11 +30,11 @@ OpenGL 의 Rendering 방식은 좌 상단의 마커 영상뷰는 Render to textu
 // fy : focal length y
 // px : image center x
 // py : image center y
-void setCameraIntrinsic(double width, double height, double fx, double fy, double px, double py)
+void setCameraIntrinsic(double width, double height, double fx, double fy, double px, double py);
 
 //인식하는 ArUco marker pattern을 설정.
 // pattern : opencv 의 aruco pattern
-void setArUcoPattern(cv::aruco::PREDEFINED_DICTIONARY_NAME pattern)
+void setArUcoPattern(cv::aruco::PREDEFINED_DICTIONARY_NAME pattern);
 
 //각 ArUco marker의 preset 크기. 기본 마커 사이즈를 1 이라 놓고 상대 크기로 계산하여 입력.
 // id : 마커의 id
@@ -45,7 +45,7 @@ void presetMarkerSize(int id, double size)
 // image : 입력 받는 이미지
 // outMarkers : 인식한 마커의 정보 출력
 // return : 인식한 마커의 갯수
-int calculateArUcoPose(cv::Mat& image, std::vector<Marker>& outMarkers)
+int calculateArUcoPose(cv::Mat& image, std::vector<Marker>& outMarkers);
 ```
 
 ## struct Marker
