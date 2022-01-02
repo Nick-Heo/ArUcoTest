@@ -12,11 +12,11 @@ RenderToTexture::~RenderToTexture()
 {
 }
 
-void RenderToTexture::initialize(const string& _shader_folder_path)
+void RenderToTexture::initialize(const string& _shaderFolderPath)
 {
-	cameraRenderer.initialize(_shader_folder_path);
+	cameraRenderer.initialize(_shaderFolderPath);
 
-	axisRenderer.initialize(_shader_folder_path);
+	axisRenderer.initialize(_shaderFolderPath);
 
 	Eigen::Matrix4f axisModelMatrix;
 	axisModelMatrix.setIdentity();

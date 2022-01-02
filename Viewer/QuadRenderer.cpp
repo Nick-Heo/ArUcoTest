@@ -10,7 +10,7 @@ QuadRenderer::~QuadRenderer()
 {
 }
 
-void QuadRenderer::initialize(const string& _shader_folder_path)
+void QuadRenderer::initialize(const string& _shaderFolderPath)
 {
 	float vertex[12] =
 	{
@@ -36,7 +36,7 @@ void QuadRenderer::initialize(const string& _shader_folder_path)
 		1.0f, 0.0f,
 	};
 	
-	shader.init(_shader_folder_path+"/texturedQuadShader.vert", _shader_folder_path+"/texturedQuadShader.frag");
+	shader.init(_shaderFolderPath+"/texturedQuadShader.vert", _shaderFolderPath+"/texturedQuadShader.frag");
 
 	vertexHandle = glGetAttribLocation(shader.getShaderId(), "vertexModel");
 	glGenBuffers(1, &vertexBuffer);

@@ -10,9 +10,9 @@ AxisRenderer::~AxisRenderer()
 {
 }
 
-void AxisRenderer::initialize(const string& _shader_folder_path)
+void AxisRenderer::initialize(const string& _shaderFolderPath)
 {
-	shader.init(_shader_folder_path+"/colorShader.vert", _shader_folder_path+"/colorShader.frag");
+	shader.init(_shaderFolderPath+"/colorShader.vert", _shaderFolderPath+"/colorShader.frag");
 
 	axisVertex.push_back(Eigen::Vector3f(0.0f, 0.0f, 0.0f));
 	axisVertex.push_back(Eigen::Vector3f(0.2f, 0.0f, 0.0f));

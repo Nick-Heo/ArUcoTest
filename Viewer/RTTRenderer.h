@@ -22,7 +22,7 @@ public:
 	RTTRenderer();
 	~RTTRenderer();
 
-	void initialize(const std::string& shader_folder_path);
+	void initialize(const std::string& shaderFolderPath);
 
 	void setScreenSize(int screenWidth, int screenHeight);
 	void setCameraIntrinsic(float width, float height, float fx, float fy, float px, float py);

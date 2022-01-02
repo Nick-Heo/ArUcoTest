@@ -23,7 +23,7 @@ public:
 	Viewer();
 	~Viewer();
 
-	void initialize(int argc, char **argv, const std::string& shader_folder_path);
+	void initialize(int argc, char **argv, const std::string& shaderFolderPath);
 
 	void setCameraIntrinsic(float width, float height, float fx, float fy, float px, float py);
 

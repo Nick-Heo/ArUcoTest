@@ -10,7 +10,7 @@ Viewer::Viewer() {
 Viewer::~Viewer() {
 }
 
-void Viewer::initialize(int argc, char **argv, const string &_shader_folder_path) {
+void Viewer::initialize(int argc, char **argv, const string &_shaderFolderPath) {
 	glutInit(&argc, argv);
 
 	screenWidth = 1024;
@@ -34,16 +34,16 @@ void Viewer::initialize(int argc, char **argv, const string &_shader_folder_path
 	glEnable(GL_BLEND);
 	glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
 
-	axisRenderer.initialize(_shader_folder_path);
+	axisRenderer.initialize(_shaderFolderPath);
 	Eigen::Matrix4f axisModelMatrix;
 	axisModelMatrix.setIdentity();
 	axisModelMatrix(2, 3) = 0.01f;
 	axisRenderer.setModelMatrix(axisModelMatrix);
 	axisRenderer.setLineWidth(5.0f);
-	cameraQuadRenderer.initialize(_shader_folder_path);
+	cameraQuadRenderer.initialize(_shaderFolderPath);
 	cameraQuadRenderer.setScreenSize(screenWidth, screenHeight);
 
-	markerRenderer.initialize(_shader_folder_path);
+	markerRenderer.initialize(_shaderFolderPath);
 }
 
 void Viewer::setCameraIntrinsic(float _width, float _height, float _fx, float _fy, float _px, float _py) {

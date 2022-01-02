@@ -12,7 +12,7 @@ RTTRenderer::~RTTRenderer()
 {
 }
 
-void RTTRenderer::initialize(const string& _shader_folder_path)
+void RTTRenderer::initialize(const string& _shaderFolderPath)
 {
 	float vertex[12] =
 	{ -0.5f, 0.5f, 0.0f,
@@ -37,7 +37,7 @@ void RTTRenderer::initialize(const string& _shader_folder_path)
 	screenWidth = 1024;
 	screenHeight = 1024;
 
-	shader.init(_shader_folder_path+"/texturedQuadShader.vert", _shader_folder_path+"/texturedQuadShader.frag");
+	shader.init(_shaderFolderPath+"/texturedQuadShader.vert", _shaderFolderPath+"/texturedQuadShader.frag");
 
 	vertexHandle = glGetAttribLocation(shader.getShaderId(), "vertexModel");
 	glGenBuffers(1, &vertexBuffer);
@@ -55,7 +55,7 @@ void RTTRenderer::initialize(const string& _shader_folder_path)
 
 	shader.bind();
 
-	rtt.initialize(_shader_folder_path);
+	rtt.initialize(_shaderFolderPath);
 
 	Eigen::Matrix4f p = GLMatrix::ortho(-3, 3, -3, 3, 0.1f, 1000.f);
 	Eigen::Matrix4f v = GLMatrix::lookAt(Eigen::Vector3f(0.0, 0.0, 100), Eigen::Vector3f(0.0, 0.0, 0.0), Eigen::Vector3f(0.0, 1.0, 0.0));

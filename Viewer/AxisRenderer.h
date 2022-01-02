@@ -23,7 +23,7 @@ public:
 	AxisRenderer();
 	~AxisRenderer();
 
-	void initialize(const std::string& shader_folder_path);
+	void initialize(const std::string& shaderFolderPath);
 	void onDraw(Eigen::Matrix4f vpMatrix);
 
 	void setModelMatrix(Eigen::Matrix4f modelMatrix);
