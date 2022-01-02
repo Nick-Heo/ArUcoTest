@@ -39,7 +39,7 @@ void setArUcoPattern(cv::aruco::PREDEFINED_DICTIONARY_NAME pattern);
 //각 ArUco marker의 preset 크기. 기본 마커 사이즈를 1 이라 놓고 상대 크기로 계산하여 입력.
 // id : 마커의 id
 // size : 마커의 크기
-void presetMarkerSize(int id, double size)
+void presetMarkerSize(int id, double size);
 
 //이미지의 마커 인식 및 포즈 계산 함수
 // image : 입력 받는 이미지
@@ -52,7 +52,7 @@ int calculateArUcoPose(cv::Mat& image, std::vector<Marker>& outMarkers);
 
 ```cpp
 //마커의 아이디
-int id
+int id;
 
 //마커의 크기
 double size;
@@ -64,7 +64,7 @@ Eigen::Matrix4d pose;
 cv::aruco::PREDEFINED_DICTIONARY_NAME pattern;
 
 //마커의 id로 부터 합성된 마커 이미지
-cv::Mat image
+cv::Mat image;
 ```
 
 ## class Viewer
