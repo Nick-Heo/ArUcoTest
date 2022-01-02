@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Viewer">
+      <UniqueIdentifier>{a76d413d-0a83-42f0-b38d-fff1ba9b23bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Viewer\shader">
+      <UniqueIdentifier>{c5791d98-3090-437e-bb7e-6fe2cc74b7bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ArUco">
+      <UniqueIdentifier>{fe82e537-2021-492a-933a-0b88a42b6662}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Viewer\QuadRenderer.cpp">
+      <Filter>Viewer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Viewer\RenderToTexture.cpp">
+      <Filter>Viewer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Viewer\RTTRenderer.cpp">
+      <Filter>Viewer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Viewer\Viewer.cpp">
+      <Filter>Viewer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Viewer\AxisRenderer.cpp">
+      <Filter>Viewer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ArUco\ArUcoController.cpp">
+      <Filter>ArUco</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Viewer\GLMatrix.hpp">
+      <Filter>Viewer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Viewer\QuadRenderer.h">
+      <Filter>Viewer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Viewer\RenderToTexture.h">
+      <Filter>Viewer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Viewer\RTTRenderer.h">
+      <Filter>Viewer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Viewer\Viewer.h">
+      <Filter>Viewer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Viewer\AxisRenderer.h">
+      <Filter>Viewer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Viewer\shader\Shader.h">
+      <Filter>Viewer\shader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ArUco\Marker.h">
+      <Filter>ArUco</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ArUco\ArUcoController.h">
+      <Filter>ArUco</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Viewer\shader\texturedQuadShader.frag">
+      <Filter>Viewer\shader</Filter>
+    </None>
+    <None Include="..\Viewer\shader\texturedQuadShader.vert">
+      <Filter>Viewer\shader</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\Viewer\shader\colorShader.frag">
+      <Filter>Viewer\shader</Filter>
+    </Text>
+    <Text Include="..\Viewer\shader\colorShader.vert">
+      <Filter>Viewer\shader</Filter>
+    </Text>
+  </ItemGroup>
+</Project>
