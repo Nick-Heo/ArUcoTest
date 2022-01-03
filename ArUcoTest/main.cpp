@@ -56,8 +56,10 @@ int main(int argc, char** argv) {
 
 	arucoController.setArUcoPattern(cv::aruco::DICT_6X6_250);
 	arucoController.setCameraIntrinsic(imageWidth, imageHeight, imageWidth, imageWidth, imageWidth / 2.0, imageHeight / 2.0);
-	arucoController.presetMarkerSize(25, 1.16);
-	arucoController.presetMarkerSize(33, 1.42);
+
+	arucoController.presetMarkerSize(8, 2.95);	// 8  590
+	arucoController.presetMarkerSize(23, 1);	// 23 200
+	arucoController.presetMarkerSize(33, 1);	// 33 200
 
 	viewer.setCameraIntrinsic(imageWidth, imageHeight, imageWidth, imageWidth, imageWidth / 2.0, imageHeight / 2.0);
 
