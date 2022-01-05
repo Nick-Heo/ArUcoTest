@@ -4,7 +4,7 @@
 
 실시간 카메라로 작동하며, 작동 환경은 다음과 같습니다.
 
-- Visual Studio 2017(vc15)
+- Visual Studio 2017(v141)
 - Eigen 3.3.7
 - OpenGL / glew / freeglut
 
